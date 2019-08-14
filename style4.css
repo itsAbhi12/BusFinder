@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+}
+body
+{
+	background-size:cover;
+	/*background-position:center;*/
+	font-family:'Poppins',sans-serif;
+	
+}
+.leftbar{
+	width:49.9%;
+	height:100%;
+	background-color:royalblue;
+	float:left;
+	border-style:solid;
+	border-color:black;
+	
+}
+.leftbar h1{
+	text-align:center;
+	font-family:sans-serif;
+	
+}
+.rightbar{
+	width:49.9%;
+	height:100%;
+	background-color:aqua;
+	border-style:solid;
+	border-color:black;
+	float:right;
+}
+.rightbar h1{
+	text-align:center;
+	font-family:sans-serif;
+	
+}
+.menu-bar{
+	background:rgb(0,100,0);
+	text-align:center;
+}
+.menu-bar ul{
+	display:inline-flex;
+	list-style:none;
+	color:#fff;
+	
+}
+.menu-bar ul li{
+	
+	width:200px;
+	margin:15px;
+	padding:15px;
+}
+.menu-bar ul li a{
+	text-decoration:none;
+	color:#fff;
+}
+.active, .menu-bar ul li:hover{
+	background:#2bab0d;
+	border-radius:3px;
+}
+.menu-bar .fa{
+	margin-right:8px;
+}
+.sub-menu{
+	display:none;
+}
+.menu-bar ul li:hover .sub-menu
+{
+	display:block;
+	position:absolute;
+	background:rgb(0,100,0);
+	margin-top:15px;
+	margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu ul
+{
+	display:block;
+	margin:16px;
+}
+.menu-bar ul li:hover .sub-menu ul li.menu-bar ul li:hover .sub-menu ul li
+{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #fff;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+	color:#b2ff00;
+}
+
+.menu-bar ul li:hover .sub-menu ul li:last-child
+{
+	border-bottom:none;
+}
+/*@media(max-width:1200px)*/
+.user{
+	text-decoration:none;
+	color:#fff;
+	position:absolute;
+	top:50px;
+}
+
+
+
